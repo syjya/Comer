@@ -1,0 +1,41 @@
+        -:    0:Source:main.cpp
+        -:    0:Graph:main.gcno
+        -:    0:Data:main.gcda
+        -:    0:Runs:1
+        -:    1:#include "function.h"
+        -:    2:#include <fstream>
+        -:    3://#include <limits.h>
+        -:    4://#include<iostream>
+        -:    5://#include<string>
+        -:    6://#include <dirent.h>
+        -:    7://#include <vector>
+        -:    8:
+        1:    9:int main(int argc, char *argv[])
+        -:   10:{
+        2:   11:    std::string tem=argv[1];       
+        2:   12:    std::string str;
+        2:   13:    std::ifstream infile;    
+        1:   14:    infile.open(tem.c_str());
+        1:   15:    int bi=0;
+        -:   16:    int b[500];
+        4:   17:    while(!infile.eof())
+        -:   18:    {
+        3:   19:        infile>>b[bi];
+        3:   20:        bi++;
+        -:   21:    }
+        1:   22:    int len=bi-1;
+        1:   23:    int e=b[bi-1];
+        1:   24:    int result=p(b, e, len);
+        -:   25:
+        1:   26:        std::ofstream write;
+        -:   27:        //cout<<tem<<endl;
+        -:   28:        char filename[200];
+        -:   29:        
+        1:   30:        tem.copy(filename,tem.length(),0);
+        -:   31:        //cout<<endl;
+        1:   32:        *(filename+tem.length())='\0';
+        1:   33:        write.open(filename, std::ios::app);                //用ios::app不会覆盖文件内容
+        1:   34:        write << std::endl<< result ;
+        1:   35:        write.close();
+        1:   36:    return 0;
+        -:   37:}

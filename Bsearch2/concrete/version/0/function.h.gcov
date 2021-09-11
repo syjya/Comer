@@ -1,0 +1,27 @@
+        -:    0:Source:function.h
+        -:    0:Graph:main.gcno
+        -:    0:Data:main.gcda
+        -:    0:Runs:1
+        -:    1:
+        1:    2:int p(int a[], int e, int len) {
+        -:    3:
+        -:    4:    int l, h, mid, ret;
+        1:    5:    l = 0;
+        1:    6:    h = len - 1;
+        1:    7:    ret = 0;
+        2:    8:    while (h > l) {
+        1:    9:        mid = (l + h) / 2;
+        1:   10:        if (e == a[mid])
+        1:   11:            ret = 1;
+        1:   12:        if (e > a[mid])
+    #####:   13:            l = mid + 1;
+        -:   14:        else
+        1:   15:            h = mid - 1;
+        -:   16:    }
+        -:   17:
+        1:   18:    mid = (l + h) / 2;
+       1*:   19:    if (ret != 1 && e == a[mid])
+    #####:   20:        ret = 1;
+        1:   21:    return ret;
+        -:   22:}
+        -:   23:

@@ -1,0 +1,39 @@
+        -:    0:Source:function.h
+        -:    0:Graph:main.gcno
+        -:    0:Data:main.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:
+function _Z1pPiii called 1 returned 100% blocks executed 58%
+        1:    2:int p(int a[], int e, int len) {
+        -:    3:
+        -:    4:    int l, h, mid, ret;
+        1:    5:    l = 0;
+        1:    6:    h = len - 1;
+        1:    7:    ret = 0;
+        2:    8:    while (h > l) {
+branch  0 taken 0%
+branch  1 taken 100% (fallthrough)
+    #####:    9:        mid = (l + h) / 2;
+    #####:   10:        if (e == a[mid])
+branch  0 never executed
+branch  1 never executed
+    #####:   11:            ret = 1;
+    #####:   12:        if (e > a[mid])
+branch  0 never executed
+branch  1 never executed
+    #####:   13:            l = mid + 1;
+        -:   14:        else
+    #####:   15:            h = mid - 1;
+        -:   16:    }
+        -:   17:
+        1:   18:    mid = (l + h) / 2;
+        1:   19:    if (ret != 1 && e == a[mid])
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+        1:   20:        ret = 1;
+        1:   21:    return ret;
+        -:   22:}
+        -:   23:
