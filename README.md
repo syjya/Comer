@@ -50,32 +50,6 @@ The abstract models of subjects are shown below：
 
   cmmand7:[ 1, (1,10] ]
 
-- **Schedule2**
-
-  【Parameters】
-
-  cmmand1: [0, 1, (1,10] ]  
-
-  cmd1_queue: [1, 2, 3]
-
-  cmmand2:[0, 1, (1,10] ]
-
-  cmd2_queue: [1, 2]
-
-  cmd2_ratio: [0, 1, 0.1, 0.4, 0.5, 0.6, 0.9, 2]
-
-  cmmand3:[0, 1, (1,10] ]
-
-  cmmand4:[0, 1, (1,10] ]
-
-  cmd4_ratio: [0, 1, 0.1, 0.4, 0.5, 0.6, 0.9, 2 ]
-
-  cmmand5:[0, 1, (1,10] ]
-
-  cmmand6:[0, 1, (1,10] ]
-
-  cmmand7:[ 1, (1,10] ]
-
 - **Determinant1**
 
   【Parameters】
@@ -272,7 +246,7 @@ The abstract models of subjects are shown below：
 
   same_number - zero ! = 1
 
-- **Bsearch**
+- **Bsearch1**
 
   【Parameters】
 
@@ -411,6 +385,32 @@ The abstract models of subjects are shown below：
   zero <= same_number
 
   same_number - zero ! = 1
+
+- **Schedule2**
+
+  【Parameters】
+
+  cmmand1: [0, 1, (1,10] ]  
+
+  cmd1_queue: [1, 2, 3]
+
+  cmmand2:[0, 1, (1,10] ]
+
+  cmd2_queue: [1, 2]
+
+  cmd2_ratio: [0, 1, 0.1, 0.4, 0.5, 0.6, 0.9, 2]
+
+  cmmand3:[0, 1, (1,10] ]
+
+  cmmand4:[0, 1, (1,10] ]
+
+  cmd4_ratio: [0, 1, 0.1, 0.4, 0.5, 0.6, 0.9, 2 ]
+
+  cmmand5:[0, 1, (1,10] ]
+
+  cmmand6:[0, 1, (1,10] ]
+
+  cmmand7:[ 1, (1,10] ]
 
 - **Printtoken2** 
 
@@ -648,7 +648,7 @@ The abstract models of subjects are shown below：
 
   The ratio of strings of length 1 + The ratio of strings of length（2，5）<=1
 
-- **Getmid**
+- **Bsearch2**
 
   【Parameters】
 
@@ -686,36 +686,6 @@ The abstract models of subjects are shown below：
 
   m：[[minus infinity，0）,0,（0，plus infinity]]
 
-- **F_oneway**
-
-  【Parameters】
-
-  theta :  [[0,10],[10,30],[30,50]]
-
-  mean_a:  [[-100,0],[0,100]]
-
-  mean_b:  [[-100,0],[0,100]]
-
-  mean_c:  [[-100,0],[0,100]]
-
-  len_a:  [[1,10],[11,30],[31,50]]
-
-  len_b:  [[1,10],[11,30],[31,50]]
-
-  len_c:  [[1,10],[11,30],[31,50]]
-
-- **Rotate**
-
-  【Parameters】
-
-  scale :  [[1,10],[11,20],[20,30]]
-
-  shape：[normal,Upper triangular matrix,Lower triangular matrix,diagonal matrix]
-
-  k：[1,1/2,1/3,1/4,1/5,0]
-
-  angle：[90,180,270,-270,-180,-90]
-
 - **Shortest_path**
 
   【Parameters】
@@ -729,6 +699,36 @@ The abstract models of subjects are shown below：
   k：[1,1/2,1/3,1/4,1/5,0]
 
   method：[FW,D,BF,J]
+
+- **Rotate**
+
+  【Parameters】
+
+  scale :  [[1,10],[11,20],[20,30]]
+
+  shape：[normal,Upper triangular matrix,Lower triangular matrix,diagonal matrix]
+
+  k：[1,1/2,1/3,1/4,1/5,0]
+
+  angle：[90,180,270,-270,-180,-90]
+
+- **F_oneway**
+
+  【Parameters】
+
+  theta :  [[0,10],[10,30],[30,50]]
+
+  mean_a:  [[-100,0],[0,100]]
+
+  mean_b:  [[-100,0],[0,100]]
+
+  mean_c:  [[-100,0],[0,100]]
+
+  len_a:  [[1,10],[11,30],[31,50]]
+  
+  len_b:  [[1,10],[11,30],[31,50]]
+  
+  len_c:  [[1,10],[11,30],[31,50]]
 
 #### data
 
