@@ -15,6 +15,16 @@ We mainly explored 3 software subjects about scipy，includes "F_oneway"、"Rota
 - **Others**
 
   In addition to the three subjects associated with Scipy, there are 28 software subjects. In this phase, each of them provides model_CT.cpp,model_COMER.cpp, and model_Random.cpp for converting abstract test cases into concrete test cases, corresponding to CT, COMER(TRI_MCT), and Random, respectively.In addition, also provides the source code, variants, and the script that can search and count the matchings of the metamorphic relations between generated test cases. 
+  
+  
+
+#### data
+
+It also includes the results of our emprical studies of COMER, that is, **subjects.xlsx**.
+
+It also includes the descriptions of  five previously unknown bugs,that is **novelBugs.md**.
+
+
 
 #### The detailed description of  the subjects
 
@@ -730,9 +740,7 @@ The abstract models of subjects are shown below：
   
   len_c:  [[1,10],[11,30],[31,50]]
 
-#### data
 
-It also includes the results of our emprical studies of COMER, that is, **subjects.xlsx**.
 
 
 
