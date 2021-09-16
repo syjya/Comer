@@ -22,7 +22,7 @@ We mainly explored 3 software subjects about scipy，includes "F_oneway"、"Rota
 
 It also includes the results of our emprical studies of COMER, that is, **subjects.xlsx**.
 
-It also includes the descriptions of  five previously unknown bugs,that is **novelBugs.md**.
+It also includes the descriptions of  five previously unknown bugs,that is **novelBugs.pdf**.
 
 
 
