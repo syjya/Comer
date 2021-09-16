@@ -20,7 +20,7 @@ We mainly explored 3 software subjects about scipy，includes "F_oneway"、"Rota
 
 #### data
 
-It also includes the results of our emprical studies of COMER, that is, **subjects.xlsx**.
+It also includes the results of our emprical studies of COMER, that is, **results.xlsx**.
 
 It also includes the descriptions of  five previously unknown bugs,that is **novelBugs.pdf**.
 
@@ -28,7 +28,7 @@ It also includes the descriptions of  five previously unknown bugs,that is **nov
 
 #### The detailed description of  the subjects
 
-Functional descriptions, inputs, outputs, and metamorphic relations of all subjects are listed in **subjects.pdf**.  
+Functional descriptions, inputs, outputs, and metamorphic relations of all subjects are listed in **metamorphic relation.pdf**.  
 
 
 

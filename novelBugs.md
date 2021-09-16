@@ -10,15 +10,69 @@ MR1: Transposition: det(A) = det(A^T^)
 
 MR2: Row Multiplied with Scalar: β*det((a~1~,...,a~k-1~ ,a~k~,a~k+1~,...,a~n~) ^T^ ) = det((a~1~,...,a~k-1~ ,β*a~k~,,a~k+1~,...,a~n~) ^T^) for k ∈ {1, ..., n}
 
-Giving two testcases 0.txt and 1.txt：
+Giving two text files as test cases:
 
-<img src="C:\Users\VULCAN\AppData\Roaming\Typora\typora-user-images\image-20210913122040011.png" alt="image-20210913122040011" style="zoom: 67%;" />
+0.txt
+
+```
+21 21
+0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 -4 -3 0
+-2 -7 0 0 0 0 0 -4 0 0 0 0 -9 0 0 0 -9 0 0 0 0
+0 -7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4
+0 0 0 0 0 0 0 -9 0 0 0 0 0 0 -1 0 0 0 0 0 0
+0 0 0 0 0 -2 0 0 0 0 0 -4 0 0 0 0 0 0 0 -5 0
+-9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 -6 0 0
+0 0 0 0 0 0 0 0 -4 0 0 0 0 -7 0 0 0 0 0 0 0
+0 0 0 0 0 0 -2 0 0 0 0 0 0 0 0 0 -5 0 -5 0 0
+0 0 0 0 0 0 0 0 0 0 -3 0 0 0 0 0 -7 0 0 0 0
+0 0 0 -4 0 0 -9 0 0 -2 0 0 -6 0 0 0 0 -10 0 0 0
+0 0 0 0 0 -10 -2 0 -9 0 0 0 0 0 0 -2 -2 0 0 -4 0
+0 0 0 0 0 -10 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 0
+0 0 0 -4 0 0 0 0 0 -5 0 0 0 0 0 0 0 0 0 0 0
+-8 0 0 0 0 0 0 0 0 -2 0 0 0 -1 0 0 0 0 0 0 -9
+0 0 0 0 0 -1 0 0 0 0 0 0 0 0 0 -8 -3 0 0 0 0
+0 0 0 0 0 0 -5 0 -7 0 0 0 -7 0 -10 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 -5 0 -2 0 -8 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 -4 0 0 0 0 0 0 -4
+0 0 -5 0 0 0 0 0 0 -4 0 0 0 0 -2 0 -9 0 0 0 0
+0 0 0 -3 -4 0 0 -3 -8 -7 0 0 -5 0 -9 0 -3 0 0 0 0
+0 0 -8 0 0 0 0 0 0 0 -10 0 0 0 0 0 0 0 0 0 0
+52740503383572488.00000000
+```
+
+ and 1.txt
+
+``` 
+21 21
+0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 -4 -3 0
+-2 -7 0 0 0 0 0 -4 0 0 0 0 -9 0 0 0 -9 0 0 0 0
+0 -7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4
+0 0 0 0 0 0 0 -9 0 0 0 0 0 0 -1 0 0 0 0 0 0
+0 0 0 0 0 -2 0 0 0 0 0 -4 0 0 0 0 0 0 0 -5 0
+-9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2 0 -6 0 0
+0 0 0 0 0 0 0 0 -4 0 0 0 0 -7 0 0 0 0 0 0 0
+0 0 0 0 0 0 -2 0 0 0 0 0 0 0 0 0 -5 0 -5 0 0
+0 0 0 0 0 0 0 0 0 0 -3 0 0 0 0 0 -7 0 0 0 0
+0 0 0 -4 0 0 -9 0 0 -2 0 0 -6 0 0 0 0 -10 0 0 0
+0 0 0 0 0 -10 -2 0 -9 0 0 0 0 0 0 -2 -2 0 0 -4 0
+0 0 0 0 0 -10 0 0 0 0 0 0 0 0 0 0 -2 0 0 0 0
+0 0 0 -4 0 0 0 0 0 -5 0 0 0 0 0 0 0 0 0 0 0
+-8 0 0 0 0 0 0 0 0 -2 0 0 0 -1 0 0 0 0 0 0 -9
+0 0 0 0 0 -1 0 0 0 0 0 0 0 0 0 -8 -3 0 0 0 0
+0 0 0 0 0 0 -5 0 -7 0 0 0 -7 0 -10 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 -5 0 -2 0 -8 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 -4 0 0 0 0 0 0 -4
+0 0 -30 0 0 0 0 0 0 -24 0 0 0 0 -12 0 -54 0 0 0 0
+0 0 0 -3 -4 0 0 -3 -8 -7 0 0 -5 0 -9 0 -3 0 0 0 0
+0 0 -8 0 0 0 0 0 0 0 -10 0 0 0 0 0 0 0 0 0 0
+316443020301434880.00000000
+```
 
 **The second test case input is based on the first test case, multiplying the value of line 20 by 6; However, the output of the first test case multiplied by 6 is not equal to the output of the second test case, which violates the metamorphic relation.**
 
 We sent an email on July 16, 2020, to the author to describe the bug we have found, but no reply is received as of now.The email content is as follows：
 
-![image-20210916232223303](C:\Users\VULCAN\AppData\Roaming\Typora\typora-user-images\image-20210916232223303.png)
+![image](https://github.com/syjya/Comer/blob/master/mail1.png)
 
 ### JAMA (From the library of JAMA)
 
@@ -32,15 +86,59 @@ MR1: Transposition: det(A) = det(A^T^)
 
 MR2: Row Multiplied with Scalar: β*det((a~1~,...,a~k-1~ ,a~k~,a~k+1~,...,a~n~) ^T^ ) = det((a~1~,...,a~k-1~ ,β*a~k~,,a~k+1~,...,a~n~) ^T^) for k ∈ {1, ..., n}
 
-Giving two testcases 0.txt and 1.txt：
+Giving two text files as test cases:
 
-<img src="C:\Users\VULCAN\AppData\Roaming\Typora\typora-user-images\image-20210913123608808.png" alt="image-20210913123608808" style="zoom: 67%;" />
+0.txt
+
+```
+16 16
+0 1 -5 5 -10 -10 -2 0 0 6 0 1 0 -5 9 10
+0 -1 6 -5 -6 6 6 -10 0 0 0 -1 0 -2 -3 -6
+-1 -4 0 -4 1 8 -7 -10 -7 -10 -5 0 -5 3 0 5
+-7 4 -8 -5 7 10 -1 0 -4 -8 6 0 -6 3 -5 -4
+-1 -6 0 -1 -6 -6 -1 -3 -6 -7 0 -8 -2 0 8 -6
+5 -4 0 0 10 1 0 8 -1 -5 0 3 -7 0 -7 4
+-5 1 6 0 5 -2 -7 -5 0 -2 -5 8 0 0 0 6
+-9 8 0 4 -5 0 0 -8 -2 -10 -6 0 -3 -10 -7 -5
+5 2 5 5 -4 9 3 -3 0 -7 -5 0 -10 0 -3 0
+-9 -5 -3 -8 0 -10 0 -4 7 0 0 10 0 -2 -7 0
+-8 0 4 -8 1 4 0 7 -9 9 -4 -4 9 0 -7 1
+6 0 -9 -4 -1 0 -10 -4 10 5 1 0 10 0 -10 5
+0 0 -2 -6 0 0 0 -7 1 0 -2 -3 3 -10 1 0
+-6 -8 -1 -5 -3 -2 -1 -7 -6 2 -8 10 6 0 0 0
+-9 0 -7 -10 0 -3 8 -1 -5 0 -1 -3 8 10 -10 -10
+-9 -1 -1 5 0 0 -1 0 0 -5 -8 8 0 -3 0 -7
+18644849679849716.00000000
+```
+
+ and 1.txt
+
+``` 
+16 16
+0 1 -5 5 -10 -10 -2 0 0 6 0 1 0 -5 9 10
+0 -1 6 -5 -6 6 6 -10 0 0 0 -1 0 -2 -3 -6
+-1 -4 0 -4 1 8 -7 -10 -7 -10 -5 0 -5 3 0 5
+-7 4 -8 -5 7 10 -1 0 -4 -8 6 0 -6 3 -5 -4
+-1 -6 0 -1 -6 -6 -1 -3 -6 -7 0 -8 -2 0 8 -6
+5 -4 0 0 10 1 0 8 -1 -5 0 3 -7 0 -7 4
+-5 1 6 0 5 -2 -7 -5 0 -2 -5 8 0 0 0 6
+-9 8 0 4 -5 0 0 -8 -2 -10 -6 0 -3 -10 -7 -5
+5 2 5 5 -4 9 3 -3 0 -7 -5 0 -10 0 -3 0
+-9 -5 -3 -8 0 -10 0 -4 7 0 0 10 0 -2 -7 0
+-8 0 4 -8 1 4 0 7 -9 9 -4 -4 9 0 -7 1
+6 0 -9 -4 -1 0 -10 -4 10 5 1 0 10 0 -10 5
+0 0 -2 -6 0 0 0 -7 1 0 -2 -3 3 -10 1 0
+-6 -8 -1 -5 -3 -2 -1 -7 -6 2 -8 10 6 0 0 0
+-45 0 -35 -50 0 -15 40 -5 -25 0 -5 -15 40 50 -50 -50
+-9 -1 -1 5 0 0 -1 0 0 -5 -8 8 0 -3 0 -7
+93224248399245968.00000000
+```
 
 **The second test case input is based on the first test case, multiplying the value of line 16 by 5; However, the output of the first test case multiplied by 5 is not equal to the output of the second test case, which violates the metamorphic relation.**
 
 We sent an email on July 16, 2020, to the author to describe the bug we have found, but no reply is received as of now.The email content is as follows：
 
-![image-20210916232249501](C:\Users\VULCAN\AppData\Roaming\Typora\typora-user-images\image-20210916232249501.png)
+![image](https://github.com/syjya/Comer/blob/master/mail2.png)
 
 ### ClosetPair
 
