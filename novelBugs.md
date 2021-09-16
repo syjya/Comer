@@ -6,9 +6,11 @@ Input： A matrix A.
 
 Output：The determinant of this matrix, i.e., det(A).
 
-MR1: Transposition: det($A$) = det($A^T$) 
+MR1: Transposition:<img src="https://render.githubusercontent.com/render/math?math=de t(A) = det(A^{T})"> 
 
-MR2: Row Multiplied with Scalar: β$\times$det($(a_{1},...,a_{k-1} ,a_{k},a_{k+1},...,a_{n}) ^T$ ) = det(($a_{1}$,...,$a_{k-1}$, β$\times$$a_{k}$, $a_{k+1}$,...,$a_{n}$)$^T$)  for k ∈ {1, ..., n}
+MR2: Row Multiplied with Scalar:
+
+<img src="https://render.githubusercontent.com/render/math?math=\beta \times det((a_{1},..., a_{k-1}, a_{k}, a_{k+1}, ..., a_{n})^T) = det((a_{1},..., a_{k-1}, \beta \times a_{k}, a_{k+1}, ..., a_{n})^T)\ \ for\ \ k \in \{1, ..., n \} ">
 
 Giving two text files as test cases:
 
@@ -82,9 +84,11 @@ Input： A matrix A.
 
 Output：The determinant of this matrix, i.e., det(A).
 
-MR1: Transposition: det($A$) = det($A^T$) 
+MR1: Transposition:<img src="https://render.githubusercontent.com/render/math?math=de t(A) = det(A^{T})"> 
 
-MR2: Row Multiplied with Scalar:  β$\times$det($(a_{1},...,a_{k-1} ,a_{k},a_{k+1},...,a_{n}) ^T$ ) = det(($a_{1}$,...,$a_{k-1}$, β$\times$$a_{k}$, $a_{k+1}$,...,$a_{n}$)$^T$)  for k ∈ {1, ..., n}
+MR2: Row Multiplied with Scalar:
+
+<img src="https://render.githubusercontent.com/render/math?math=\beta \times det((a_{1},..., a_{k-1}, a_{k}, a_{k+1}, ..., a_{n})^T) = det((a_{1},..., a_{k-1}, \beta \times a_{k}, a_{k+1}, ..., a_{n})^T)\ \ for\ \ k \in \{1, ..., n \} ">
 
 Giving two text files as test cases:
 
