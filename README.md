@@ -20,9 +20,9 @@ We mainly explored 3 software subjects about scipy，includes "F_oneway"、"Rota
 
 #### data
 
-It also includes the results of our emprical studies of COMER, that is, **results.xlsx**.
+It also provides the results of our emprical studies of COMER, including **results.xlsx**、**time_abstract.xlsx**、**time_concrete.xlsx** and **ComerVSOptimal.xlsx**, and is explained at **data.md**.
 
-It also includes the descriptions of  five previously unknown bugs,that is **novelBugs.pdf**.
+It also includes the descriptions of  five previously unknown bugs,that is **novelBugs.md**.
 
 
 
