@@ -2,7 +2,7 @@
 
 As shown in the flow chart, COMER is divided into four stages. The first stage is to model and determine the metamorphic relations, the second stage is to generate abstract test cases, the third stage is to generate concrete test cases, and the last stage is to judge whether there are bugs in the software.
 
-![image](https://github.com/syjya/Comer/blob/master/flow%20chart.JPG =200x400)
+![image](https://github.com/syjya/Comer/blob/master/flow%20chart.JPG =100x200)
 
 We mainly explored 31 software subjects. For each of these software subjects, we provide a folder containing  all the code. In addition to the codes of the above four stages, we also provide experimental results, please refer to section Data.
 
