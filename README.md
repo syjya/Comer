@@ -1,4 +1,4 @@
-## COMER, an enhancement approach of CT which supports metamorphic relation matching
+# COMER, an enhancement approach of CT which supports metamorphic relation matching
 
 As shown in the flow chart, COMER is divided into four stages. The first stage is to model and determine the metamorphic relations, the second stage is to generate abstract test cases, the third stage is to generate concrete test cases, and the last stage is to judge whether there are bugs in the software.
 
@@ -8,7 +8,7 @@ We mainly explored 31 software subjects. For each of these software subjects, we
 
 
 
-#### Model and determine the metamorphic relations
+## Model and determine the metamorphic relations
 
 Functional descriptions, inputs, outputs, and metamorphic relations of all subjects are listed in **metamorphic relation.pdf**.  
 
@@ -16,13 +16,13 @@ The abstract models of subjects are shown in **abstract models.md**. For each su
 
 
 
-#### Abstract test case generation
+## Abstract test case generation
 
 This includes **ART_Cons.jar**, **ART_Cons_MR.jar**, and **Baseline.jar**, corresponding to CT, COMER, and TRI_MCT respectively.Input parameters include generating the abstract test case store path, dimension, and file name (numeric only) .For example，run the command "java  -jar ART_Cons.jar  /ART_Cons  2  0"，then a TXT file named 0 is generated under the path "/ART_Cons" to hold an abstract set of test cases that meet 2-dimensional coverage. In the generated TXT file, each line represents a test case.
 
 
 
-#### Concrete test case generation
+## Concrete test case generation
 
 - **Scipy**
 
@@ -42,7 +42,7 @@ In addition, the **source code** of the software is provided. **Variants code** 
 
 
 
-#### Judge whether there are bugs in the software
+## Judge whether there are bugs in the software
 
 - **Scipy**
 
@@ -54,7 +54,7 @@ In addition to the three subjects associated with Scipy, there are 28 software s
 
 
 
-#### Data
+## Data
 
 It also provides the results of our emprical studies of COMER, including **results.xlsx**、**time_abstract.xlsx**、**time_concrete.xlsx**、**featuresOfMR.xlsx** and **ComerVSOptimal.xlsx**, and is explained at **data.md**.
 
